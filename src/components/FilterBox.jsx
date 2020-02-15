@@ -28,12 +28,12 @@ export default class FilterBox extends React.Component {
       }
     })
 
-      axios.get('https://localhost:5001/api/genres', config)
+      axios.get('http://api.recommend.ninja/api/genres', config)
       .then(response => this.setState({genre: response.data}))
       .catch(err => console.log(err))
 
 
-      axios.get('https://localhost:5001/api/themes', config)
+      axios.get('http://api.recommend.ninja/api/themes', config)
       .then(response => this.setState({theme: response.data}))
       .catch(err => console.log(err))
     }

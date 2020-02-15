@@ -24,7 +24,8 @@ export default class FilterBox extends React.Component {
       headers: {
         'Acces-Control-Allow-Origin' : '*',
         'Access-Control-Allow-Methods': '*',
-        'Access-Control-Allow-Headers': '*'
+        'Access-Control-Allow-Headers': '*',
+        'Accept': 'application/json'
       }
     })
 

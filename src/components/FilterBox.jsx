@@ -29,12 +29,12 @@ export default class FilterBox extends React.Component {
       }
     })
 
-      axios.get('http://192.168.10.189:8080//api/genres', config)
+      axios.get('http://192.168.10.189:8080/api/genres', config)
       .then(response => this.setState({genre: response.data}))
       .catch(err => console.log(err))
 
 
-      axios.get('http://192.168.10.189:8080//api/themes', config)
+      axios.get('http://192.168.10.189:8080/api/themes', config)
       .then(response => this.setState({theme: response.data}))
       .catch(err => console.log(err))
     }

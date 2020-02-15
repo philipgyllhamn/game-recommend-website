@@ -238,7 +238,7 @@ export default class FilterBox extends React.Component {
 
         await axios({
            method: 'post',
-           url: 'http://api.recommend.ninja/api/recommend',
+           url: 'http://192.168.10.189:8080/api/recommend',
            data: data,
            headers: {
              'Accept': 'application/json',

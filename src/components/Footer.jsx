@@ -16,10 +16,9 @@ export default class Footer extends React.Component {
                                 </ul>
                             </div>
                             <div class="col-md-6 item text">
-                                <h3>Game Recommend</h3>
-                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                                <h3>recommend.ninja</h3>
+                                <p>RecommendNinja's goal is to provide you with tips on games you can play based on your preferences. We try our best to provide game recommendations on games that have high ratings and/or high popularity</p>
                             </div>
-                            <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                         </div>
                         <p class="copyright">Philip Gyllhamn © 2019</p>
                     </div>

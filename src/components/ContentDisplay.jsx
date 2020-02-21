@@ -31,7 +31,7 @@ export default class ContentDisplay extends React.Component {
 
     createImagesWithLink(){
         linkArray = [];
-        console.log('works')
+       
         this.props.websites.map(val => {
             val.url = val.url.replace('https://','');
 
@@ -73,7 +73,7 @@ export default class ContentDisplay extends React.Component {
             }
         })
 
-        console.log(linkArray)
+       // console.log(linkArray)
     }
 
     render(){

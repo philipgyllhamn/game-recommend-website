@@ -25,6 +25,7 @@ export default class FilterBox extends React.Component {
         'Acces-Control-Allow-Origin' : '*',
         'Access-Control-Allow-Methods': '*',
         'Access-Control-Allow-Headers': '*',
+        'Content-Type': 'application/json',
         'Accept': 'application/json'
       }
     })
@@ -81,11 +82,11 @@ export default class FilterBox extends React.Component {
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="form-group col-md-6">
-                                <label>From</label>
+                                <label style={{float: left}}>From</label>
                                 <input type="number" required class="form-control" id="inputYearFrom" placeholder="2010" value="2000"/>
                                 </div>
                                 <div class="form-group col-md-6">
-                                <label>To</label>
+                                <label style={{float: left}}>To</label>
                                 <input type="number" required class="form-control" id="inputYearTo" placeholder="2019" value="2020"/>
                                 </div>
                         </div>
@@ -219,7 +220,7 @@ export default class FilterBox extends React.Component {
         'GamingSystems' : checkedSys.toString()
       }
 
-      console.log(data);
+      //console.log(data);
       var themeOrGenre = false;
 
       if (checkedThemes.length > 0 || checkedGenres.length > 0) {

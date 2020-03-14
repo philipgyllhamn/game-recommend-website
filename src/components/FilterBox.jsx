@@ -30,12 +30,12 @@ export default class FilterBox extends React.Component {
       }
     })
 
-      axios.get('http://192.168.10.189:8080/api/genres', config)
+      axios.get('https://recommend-api-ninja.herokuapp.com/api/genres', config)
       .then(response => this.setState({genre: response.data}))
       .catch(err => console.log(err))
 
 
-      axios.get('http://192.168.10.189:8080/api/themes', config)
+      axios.get('https://recommend-api-ninja.herokuapp.com/api/themes', config)
       .then(response => this.setState({theme: response.data}))
       .catch(err => console.log(err))
     }
@@ -239,7 +239,7 @@ export default class FilterBox extends React.Component {
 
         await axios({
            method: 'post',
-           url: 'http://192.168.10.189:8080/api/recommend',
+           url: 'https://recommend-api-ninja.herokuapp.com/api/recommend',
            data: data,
            headers: {
              'Accept': 'application/json',

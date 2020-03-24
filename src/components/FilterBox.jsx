@@ -71,7 +71,7 @@ export default class FilterBox extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div class="card sideCard">
+                {/*<div class="card sideCard">
                   <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -91,8 +91,8 @@ export default class FilterBox extends React.Component {
                                 </div>
                         </div>
                     </div>
-                  </div>
-                </div>
+                  </div>*/}
+                        </div>
                 <div class="card sideCard">
                   <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
@@ -196,10 +196,10 @@ export default class FilterBox extends React.Component {
           }
 
       } else if(option === "system"){
-        var index = checkedSys.indexOf(id)
+        var idx = checkedSys.indexOf(id)
 
-        if (checkedSys[index] === id) {
-          checkedSys.splice(index,2)
+        if (checkedSys[idx] === id) {
+          checkedSys.splice(idx,2)
         } else {
           checkedSys.push(id);
         }
@@ -209,8 +209,8 @@ export default class FilterBox extends React.Component {
     }
 
     async recommendGame(){
-      var yearFrom = document.getElementById('inputYearFrom').value;
-      var yearTo = document.getElementById('inputYearTo').value;
+      var yearFrom = '2000';
+      var yearTo = '2020';
 
       const data = {
         'YearFrom' : yearFrom,
@@ -227,7 +227,7 @@ export default class FilterBox extends React.Component {
         themeOrGenre = true;
       }
 
-      if (yearFrom == null || yearFrom == null || checkedSys.length == 0 || !themeOrGenre){
+      if (yearFrom === null || yearFrom === null || checkedSys.length === 0 || !themeOrGenre){
         setTimeout(function(){
           document.getElementById('warningText').hidden = true;
         },5000)

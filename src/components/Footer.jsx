@@ -12,7 +12,6 @@ export default class Footer extends React.Component {
                                 <ul>
                                     <li><a href="/about">About</a></li>
                                     <li><a href="/about">Privacy&nbsp;</a></li>
-                                    <li><a href="/about">Contact</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6 item text">

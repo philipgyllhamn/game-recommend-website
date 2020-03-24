@@ -6,7 +6,6 @@ import '../assets/css/Footer-Dark.css'
 import '../assets/css/Login-Form-Dark.css'
 import '../assets/css/Navigation-with-Button.css'
 import '../assets/css/styles.css'
-import logo from '../assets/img/logo.png'
 import logo2 from '../assets/img/logo2.png'
 
 

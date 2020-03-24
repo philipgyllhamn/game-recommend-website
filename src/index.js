@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Login from './pages/Login'
+//import Login from './pages/Login'
 import About from './pages/About'
 import * as serviceWorker from './serviceWorker';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 const routing = (
     <Router>
       <div>
         <Route exact path="/" component={App} />
-        <Route path="/login" component={Login} />
+        {/*<Route path="/login" component={Login} />*/}
         <Route path="/about" component={About} />
       </div>
     </Router>

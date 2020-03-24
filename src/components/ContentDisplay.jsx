@@ -13,7 +13,7 @@ import reddit from '../assets/img/icons/reddit.png'
 import epic from '../assets/img/icons/epic.png'
 import itch from '../assets/img/icons/itch.png'
 import gog from '../assets/img/icons/gog.png'
-import home from '../assets/img/icons/home.png'
+//import home from '../assets/img/icons/home.png'
 import g2a from '../assets/img/icons/g2a.png'
 import play from '../assets/img/icons/google-play.png'
 import itunes from '../assets/img/icons/itunes.png'
@@ -93,10 +93,10 @@ export default class ContentDisplay extends React.Component {
                             </div>
                             <div class="col-md-8">
                             <div class="card-body textMain">
-                            <h5 class="card-title">{this.props.title}</h5>
-                                <p class="card-text"><span class="boxTitle">Realese Year: </span><span class="realese">{this.props.realeseDate}</span></p>
-                                <p class="card-text"><span class="boxTitle">Rating: </span><div class="rating" >{rating}</div></p>
-                                <p class="card-text summary"><span class="boxTitle">Summary </span>{this.props.summary}</p>
+                            <h1 style={{fontSize: '150%'}} class="card-title">{this.props.title}</h1>
+                                <h2 style={{fontSize: '100%'}} class="card-text"><span class="boxTitle">Realese Year: </span><span class="realese">{this.props.realeseDate}</span></h2>
+                                <h2 style={{fontSize: '100%'}} class="card-text"><span class="boxTitle">Rating: </span><div class="rating" >{rating}</div></h2>
+                                <h2 style={{fontSize: '100%'}} class="card-text summary"><span class="boxTitle">Summary </span>{this.props.summary}</h2>
                                 <div>
                                     {linkArray.map(website => {
                                         //return <a class="card-text" href={website.url}>{website.url}</a>

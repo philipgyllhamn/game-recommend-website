@@ -4,15 +4,19 @@ import './index.css';
 import App from './App';
 //import Login from './pages/Login'
 import About from './pages/About'
+import ErrorPage from './components/ErrorPage'
 import * as serviceWorker from './serviceWorker';
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 
 const routing = (
     <Router>
       <div>
-        <Route exact path="/" component={App} />
-        {/*<Route path="/login" component={Login} />*/}
-        <Route path="/about" component={About} />
+        <Switch>
+          <Route exact path="/" component={App} />
+          {/*<Route path="/login" component={Login} />*/}
+          <Route path="/about" component={About} />
+          <Route path="" component={ErrorPage} />
+        </Switch>
       </div>
     </Router>
   )

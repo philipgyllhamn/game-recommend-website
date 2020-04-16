@@ -30,11 +30,12 @@ export default class FilterBox extends React.Component {
       }
     })
 
+    // Gets all available genres
       axios.get('https://recommend-api-ninja.herokuapp.com/api/genres', config)
       .then(response => this.setState({genre: response.data}))
       .catch(err => console.log(err))
 
-
+    // Gets all available themes
       axios.get('https://recommend-api-ninja.herokuapp.com/api/themes', config)
       .then(response => this.setState({theme: response.data}))
       .catch(err => console.log(err))
@@ -177,6 +178,7 @@ export default class FilterBox extends React.Component {
 
     addCheckboxToArray(id, option) {
 
+      // Adds themes to theme array
       if (option === "theme") {
         var index = checkedThemes.indexOf(id)
 
@@ -185,7 +187,8 @@ export default class FilterBox extends React.Component {
         } else {
             checkedThemes.push(id);
           }
-
+      
+      // Adds genres to genre array
       } else if (option === "genre") {
         var index = checkedGenres.indexOf(id)
 
@@ -195,6 +198,7 @@ export default class FilterBox extends React.Component {
             checkedGenres.push(id);
           }
 
+      // Adds systems to system array
       } else if(option === "system"){
         var idx = checkedSys.indexOf(id)
 
@@ -223,6 +227,7 @@ export default class FilterBox extends React.Component {
       //console.log(data);
       var themeOrGenre = false;
 
+      // checks if any themes or genres has been selected
       if (checkedThemes.length > 0 || checkedGenres.length > 0) {
         themeOrGenre = true;
       }
